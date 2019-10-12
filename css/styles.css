@@ -1,0 +1,217 @@
+/* AnthonyDevelopedthis.com CSS */
+/* Author: Anthony Stenberg-Di Geronimo */
+img {
+  width: 100%;
+  height: auto; }
+
+header {
+  min-width: 100%;
+  height: 150px;
+  background: #023951;
+  position: relative;
+  margin: 0 0 15px 0; }
+  header div#header-logo {
+    max-width: 160px;
+    height: 100%; }
+  header ul {
+    margin: 55px 0 0 0; }
+    header ul li {
+      background: #fff; }
+      header ul li a {
+        text-decoration: none;
+        color: #023951; }
+      header ul li a:hover {
+        background: #023951;
+        color: #fff; }
+
+div#wrapper .slideshow-container {
+  width: 800px;
+  height: 500px;
+  position: relative;
+  margin: auto; }
+  div#wrapper .slideshow-container .mySlides {
+    position: relative; }
+  div#wrapper .slideshow-container .slide1 .slide1-Heading {
+    background-color: #023951;
+    width: 100%;
+    height: 60px;
+    line-height: 60px; }
+  div#wrapper .slideshow-container .slide1 .moc-tc {
+    color: #FB8500; }
+  div#wrapper .slideshow-container .slide1 div#elepi .elepi-text {
+    padding: 20px; }
+  div#wrapper .slideshow-container .slide2 {
+    color: #FB8500;
+    background: #023951; }
+    div#wrapper .slideshow-container .slide2 .slide2-Heading {
+      background: #023951; }
+    div#wrapper .slideshow-container .slide2 .tile1 {
+      width: 40%;
+      position: absolute;
+      position: relative; }
+    div#wrapper .slideshow-container .slide2 .tile2 {
+      float: right; }
+div#wrapper .fade:not(.show) {
+  opacity: 1; }
+
+div#wrapper {
+  width: 980px;
+  margin: 0 auto; }
+  div#wrapper .resume-experience {
+    min-height: 100%;
+    position: relative;
+    margin-bottom: 20px; }
+    div#wrapper .resume-experience h3 {
+      position: absolute;
+      top: 0;
+      margin: 16px 0 0 0;
+      z-index: 10; }
+    div#wrapper .resume-experience .timeline {
+      border-left: 2px dashed #023951;
+      z-index: -10;
+      width: 50%;
+      float: right;
+      min-height: 100%; }
+    div#wrapper .resume-experience .exp-titles {
+      width: 48%;
+      position: absolute;
+      right: 0;
+      min-height: 100%;
+      bottom: 0; }
+    div#wrapper .resume-experience .exp-dates {
+      width: 48%;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      min-height: 100%; }
+    div#wrapper .resume-experience .exp-tile {
+      height: 85px;
+      z-index: 5; }
+      div#wrapper .resume-experience .exp-tile span {
+        margin: 5px;
+        line-height: 1rem;
+        height: 1rem;
+        text-align: center; }
+  div#wrapper .resume-other {
+    background: white;
+    padding-bottom: 35px;
+    margin-bottom: 20px; }
+    div#wrapper .resume-other h3 {
+      margin: 16px 0 0 0; }
+    div#wrapper .resume-other h4#languages {
+      margin: 0 0 10px 40px;
+      width: 100%; }
+    div#wrapper .resume-other h5#key {
+      margin: 20px 0 10px 40px;
+      width: 100%; }
+    div#wrapper .resume-other h4#cms, div#wrapper .resume-other h4#frameworks, div#wrapper .resume-other h4#learning {
+      margin: 20px 0 10px 40px;
+      width: 100%; }
+    div#wrapper .resume-other .tile {
+      margin: 0 20px -10px 0;
+      width: 15%; }
+    div#wrapper .resume-other .languages .tile-1, div#wrapper .resume-other .cms .tile-1 {
+      margin: 0 20px -15px 55px; }
+    div#wrapper .resume-other .frameworks .tile {
+      margin: 0 20px 20px 0; }
+    div#wrapper .resume-other .learning .tile-1 {
+      margin: 0 20px 20px 55px; }
+    div#wrapper .resume-other .key {
+      border-top: 2px solid #251400; }
+      div#wrapper .resume-other .key .tile {
+        width: 10%; }
+  div#wrapper .resume-details {
+    height: 200px;
+    background: #023951;
+    color: white; }
+    div#wrapper .resume-details .resume-details-picture {
+      height: 100%; }
+      div#wrapper .resume-details .resume-details-picture .resume-picture {
+        border-radius: 50%;
+        height: 90%;
+        width: auto; }
+    div#wrapper .resume-details .resume-details-info {
+      height: 100%; }
+      div#wrapper .resume-details .resume-details-info h4 {
+        margin: 1rem 0 1rem;
+        color: white; }
+      div#wrapper .resume-details .resume-details-info h5 {
+        font-size: 1.214em;
+        margin: 0 0 0 1rem;
+        color: white; }
+  div#wrapper section .home-recentArticles .post-container .row .border-slide {
+    border-right: 5px solid #FB8500; }
+  div#wrapper section .home-recentArticles .post-container .article-card {
+    width: 675px; }
+
+footer {
+  border-top: 2.5px solid #023951;
+  border-bottom: 2.5px solid #023951;
+  height: 50px; }
+  footer ul {
+    margin: 0 auto;
+    width: 980px;
+    height: 50px; }
+    footer ul li {
+      width: 33.333%;
+      line-height: 50px; }
+
+div#wrapper h3 {
+  margin: 0.5rem 0 1rem; }
+div#wrapper form button {
+  background: #FB8500;
+  color: #023951; }
+div#wrapper form button:hover {
+  background: #023951;
+  color: #FB8500; }
+
+div#wrapper main .post-container {
+  border-bottom: 5px solid #FB8500; }
+  div#wrapper main .post-container h5 {
+    color: #04709E; }
+div#wrapper aside .cats a {
+  background: #023951;
+  color: white;
+  display: inline-block;
+  margin-bottom: 5px;
+  text-decoration: none; }
+div#wrapper aside .cats a:hover {
+  background: #BE6400;
+  color: #FFA43E; }
+
+html {
+  font-size: 16px; }
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #333; }
+
+p {
+  margin-bottom: 1.25em; }
+
+h1, h2, h3, h4, h5 {
+  margin: 2.75rem 0 1rem;
+  font-family: "Roboto slab", serif;
+  font-weight: 400;
+  line-height: 1.15;
+  color: #251400; }
+
+h1 {
+  margin-top: 0;
+  font-size: 5.653em; }
+
+h2 {
+  font-size: 3.998em; }
+
+h3 {
+  font-size: 2.827em; }
+
+h4 {
+  font-size: 1.999em; }
+
+h5 {
+  font-size: 1.414em; }
+
+/*# sourceMappingURL=styles.css.map */

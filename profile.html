@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/slideshow.css">
+<link rel="stylesheet" href="css/styles.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!--Remy Sharp Shim --> 
+<!--[if lte IE 9]> 
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js" type="text/javascript" >
+</script> 
+<![endif]-->
+
+
+</head>
+<body>
+    <header class="container">
+        <div class="row">
+            <div class="col-2">
+                <div id="header-logo">
+                    <img src="images/logo.png" alt="Anthony Developed this logo">
+                </div>
+            </div> <!-- end of logo div -->
+            <div class="col-8 offset-2">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="home.html">home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div> <!-- end of nav div-->
+        </div>
+        </header>
+        <div id="wrapper" class="container mx-auto">
+                <script src="https://cdn.ckeditor.com/ckeditor5/12.2.0/classic/ckeditor.js"></script>
+        
+                    <form action="http://localhost:8888/adt/AdminForms/profile" class="container" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+                <section id="article-title" class=""><h4>Name</h4><input type="text" name="profile-firstname" value="Anthony " placeholder="First Name" id="firstName" maxlength="100" size="100"  />
+                <input type="text" name="profile-lastname" value="" placeholder="Last Name" id="firstName" maxlength="100" size="100"  />
+                </section>    <section id="profile-quote" class="">
+                    <h4>Quote</h4><strong> <label for="profile-qoute">Quote</label></strong><textarea name="profile-qoute" cols="40" rows="10" id="profile-quote" size="100" >The modern Renaissance man is a jack of many trades and a master of some.</textarea>
+                <strong> <label for="profile-quoteSource">Quote Source</label></strong><input type="text" name="profile-quoteSource" value="Jack Spirko" id="profile-quoteSource" maxlength="100"  />
+                    </section>
+                    <section id="profile-contact" class="">
+                    <h4>Contact Info</h4><strong> <label for="profile-email">Email</label></strong><input type="text" name="profile-email" value="stenbergdigeronimo@gmail.com" id="profile-email"  />
+                <strong> <label for="profile-website">Website</label></strong><input type="text" name="profile-website" value="" id="profile-website"  />
+                <strong> <label for="profile-facebook">Facebook</label></strong><input type="text" name="profile-facebook" value="" id="profile-facebook"  />
+                <strong> <label for="profile-twitter">Twitter</label></strong><input type="text" name="profile-twitter" value="" id="profile-twitter"  />
+                <strong> <label for="profile-linkedIn">LinkedIN</label></strong><input type="text" name="profile-linkedIn" value="https://www.linkedin.com/in/stenbergdigeronimo/" id="profile-linkedIn"  />
+                    </section>
+                    <section id="profile-body" class="">
+                        <h4>Body</h4>
+                        <textarea name="profile-body" id="body"><p>Hi there!&nbsp;</p><p>Thanks for visiting my site! As a junior web developer based out of Seattle, WA, I'm used to dealing with stiff compensation. I completed my first degree in web development in a year and a half, finishing in December 2017. I'm currently enrolled in a Bachelor's program that will start in fall of 2019, to earn a Bachelor's of Applied Science in Application Development.&nbsp;</p><p>when I'm not slinging code and making magic happen.</p></textarea>        
+                        <script>
+                            ClassicEditor
+                                    .create( document.querySelector( '#body' ) )
+                                    .then( editor => {
+                                            console.log( editor );
+                                    } )
+                                    .catch( error => {
+                                            console.error( error );
+                                    } );
+                        </script>
+                    </section>
+                    <section id="profile-image" class="">
+                        <div class="w-50s float-left">
+                        <h5>Profile Image</h5>
+                        <input type="file" name="userfile" id="profileImage">
+                        </div>
+                        <div class="w-50s float-right">
+                            <img src="http://localhost:8888/adt/public/images/AnthonyStenbergDiGeronimo.jpg">        </div>
+                    </section>
+                    <section id="profile-save" class="w clear"><div class="center"><input type="submit" name="save" value="Save!"  id="save" class="center w-10 d-block" />
+                </div></section>
+            </form>
+            </div>
+        </div> <!-- end of wrapper -->
+    </body>
+</html>

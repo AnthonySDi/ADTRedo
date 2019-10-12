@@ -1,0 +1,256 @@
+/* AnthonyDevelopedthis.com CSS */
+/* Author: Anthony Stenberg-Di Geronimo */
+
+// variables
+$mainBlue: #023951
+$mainOrange: #FB8500
+$white: #fff
+$darkestOrange: #251400
+$secondaryBlue: #04709E
+
+
+// Mixins
+
+
+// Styles
+
+
+img
+    width: 100%
+    height: auto
+    
+
+header
+    min-width: 100%
+    height: 150px
+    background: $mainBlue 
+    position: relative
+    margin: 0 0 15px 0
+    div#header-logo
+        max-width: 160px
+        height: 100%
+    ul
+        margin: 55px 0 0 0
+        li
+            background: $white
+            a
+                text-decoration: none
+                color: $mainBlue
+            a:hover
+                background: $mainBlue
+                color: $white
+
+// ++++++ Landing Page +++++++
+
+div#wrapper
+    .slideshow-container
+        width: 800px
+        height: 500px
+        position: relative
+        margin: auto
+        .mySlides
+            position: relative
+        .slide1
+            .slide1-Heading
+                background-color: $mainBlue
+                width: 100%
+                height: 60px
+                line-height: 60px
+            .moc-tc
+                color: $mainOrange
+            div#elepi
+                .elepi-text 
+                    padding: 20px
+        .slide2
+            color: $mainOrange
+            background: $mainBlue
+            .slide2-Heading
+                background: $mainBlue
+            .tile1
+                width: 40%
+                position: absolute
+                position: relative
+            .tile2
+                float: right
+    .fade
+        &:not(.show)
+            opacity: 1
+
+
+// ++++++ Home ++++++
+div#wrapper
+    width: 980px
+    margin: 0 auto
+    .resume-experience
+        min-height: 100%
+        position: relative
+        margin-bottom: 20px
+        h3
+            position: absolute
+            top: 0
+            margin: 16px 0 0 0
+            z-index: 10
+        .timeline
+            border-left: 2px dashed $mainBlue
+            z-index: -10
+            width: 50%
+            float: right
+            min-height: 100%
+        .exp-titles
+            width: 48%
+            position: absolute
+            right: 0
+            min-height: 100%
+            bottom: 0
+        .exp-dates
+            width: 48%
+            position: absolute
+            left: 0
+            bottom: 0
+            min-height: 100%
+        .exp-tile
+            height: 85px
+            z-index: 5
+            span
+                margin: 5px
+                line-height: 1rem
+                height: 1rem
+                text-align: center
+    .resume-other
+        background: white
+        padding-bottom: 35px
+        margin-bottom: 20px
+        h3
+            margin: 16px 0 0 0
+        h4#languages
+            margin: 0 0 10px 40px
+            width: 100%
+        h5#key
+            margin: 20px 0 10px 40px
+            width: 100%            
+        h4#cms, h4#frameworks, h4#learning
+            margin: 20px 0 10px 40px
+            width: 100%
+        .tile
+            margin: 0 20px -10px 0
+            width: 15%
+        .languages .tile-1, .cms .tile-1
+            margin: 0 20px -15px 55px
+        .frameworks
+            .tile
+                margin: 0 20px 20px 0
+        .learning .tile-1
+            margin: 0 20px 20px 55px
+        .key
+            border-top: 2px solid $darkestOrange 
+            .tile 
+                width: 10%
+    .resume-details
+        height: 200px
+        background: $mainBlue
+        color: white
+        .resume-details-picture
+            height: 100%
+            .resume-picture
+                border-radius: 50%
+                height: 90%
+                width: auto
+        .resume-details-info
+            height: 100%
+            h4
+                margin: 1rem 0 1rem
+                color: white
+            h5
+                font-size: 1.214em
+                margin: 0 0 0 1rem
+                color: white
+    section
+        .home-recentArticles
+            .post-container
+                .row
+                    .border-slide
+                        border-right: 5px solid $mainOrange
+                .article-card
+                    width: 675px
+
+footer
+    border-top: 2.5px solid $mainBlue
+    border-bottom: 2.5px solid $mainBlue
+    height: 50px
+    ul
+        margin: 0 auto
+        width: 980px
+        height: 50px
+        li
+            width: 33.333%
+            line-height: 50px
+
+// ++++++++ Contact ++++++++
+div#wrapper
+    h3
+        margin: .5rem 0 1rem
+    form
+        button
+            background: $mainOrange
+            color: $mainBlue
+        button:hover
+            background: $mainBlue
+            color: $mainOrange
+
+// ++++++++ Blog ++++++++
+div#wrapper
+    main
+        .post-container
+            border-bottom: 5px solid $mainOrange
+            h5
+                color: $secondaryBlue
+    aside
+        .cats
+            a 
+                background: $mainBlue
+                color: white
+                display: inline-block
+                margin-bottom: 5px
+                text-decoration: none
+            a:hover
+                background: #BE6400
+                color: #FFA43E
+// ++++++++  ++++++++
+
+// Typography
+// =====================================
+
+html
+    font-size: 16px
+
+body
+    font-family: 'Roboto Condensed', sans-serif
+    font-weight: 400
+    line-height: 1.45
+    color: #333
+
+p
+    margin-bottom: 1.25em
+
+h1, h2, h3, h4, h5
+    margin: 2.75rem 0 1rem
+    font-family: 'Roboto slab', serif
+    font-weight: 400 
+    line-height: 1.15
+    color: $darkestOrange
+
+h1
+    margin-top: 0
+    font-size: 5.653em
+
+h2
+    font-size: 3.998em
+
+h3
+    font-size: 2.827em
+
+h4
+    font-size: 1.999em
+
+h5
+    font-size: 1.414em
